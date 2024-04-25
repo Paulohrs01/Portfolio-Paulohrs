@@ -230,7 +230,7 @@ body {
     align-content: end;
 }
 
- .img-mobile {
+.img-mobile {
     width: 190px;
     height: 380px;
     margin-right: 20px;
@@ -372,7 +372,8 @@ body {
     width: 800px;
 }
 
-.projetos .desc, .ultima {
+.projetos .desc,
+.ultima {
     margin-bottom: 70px;
 }
 
@@ -441,7 +442,7 @@ body {
     transition: transform 0.5s ease;
 }
 
-.projetos .img-projetos .link-pai:hover{
+.projetos .img-projetos .link-pai:hover {
     filter: opacity(1);
     transform: scale(1.1);
 }
@@ -462,7 +463,6 @@ body {
     transform: scale(1.1);
 }
 
-
 .projetos .container .link-pai {
     position: relative;
     transition: all 0.3s ease;
@@ -475,7 +475,7 @@ body {
     opacity: 1;
 }
 
-.projetos .container .img-projetos .link-pai .link-projeto  {
+.projetos .container .img-projetos .link-pai .link-projeto {
     position: absolute;
     background-color: #0808089d;
     display: flex;
