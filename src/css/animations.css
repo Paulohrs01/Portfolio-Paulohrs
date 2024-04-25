@@ -1,0 +1,73 @@
+ /* Efeito: -titulo para textos: */
+
+ .hidden-titulo {
+    opacity: 0;
+    transform: translateX(0) scale(0.8);
+    filter: blur(10px);
+    transition: all 1s;
+}
+
+.show-titulo {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    filter: blur(0);
+    transition: all 1s;
+}
+
+/*  Efeito de elementos vindo da esquerda: */
+
+.hidden-esquerda {
+    opacity: 0;
+    transform: translateX(-100%);
+    filter: blur(10px);
+    transition: all 4s;
+}
+
+.show-esquerda {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+    transition: all 4s;
+}
+
+/*  Efeito de elementos vindo da direita: */
+
+.hidden-direita {
+    opacity: 0;
+    transform: translateX(100px);
+    filter: blur(10px);
+    transition: all 4s;
+}
+
+.show-direita {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+    transition: all 4s;
+}
+
+/*  Efeito somente Blur para os containers: */
+
+.hidden {
+    opacity: 0;
+    filter: blur(10px);
+    transition: all 0.5s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 0.5s;
+}
+
+/*  Efeito para img mobile/desktop do home, efeito vindo da direita com opacidade 0.5 para funcionar o hover com opacidade 1.0 */
+
+.hidden-opacity {
+    transform: translateX(100px);
+    transition: all 1.2s;
+}
+
+.show-opacity {
+    transform: translateX(0);
+    transition: all 1.2s;
+}

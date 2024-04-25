@@ -1,0 +1,17 @@
+:root{
+    --text-color-primaria: #ffffffef;
+    --text-color-secundaria: #a6a7ab;
+    --text-color-terciaria: #3CCF91;
+
+    --background-color: #080808; 
+
+}
+
+.text-verde {
+    color: var(--text-color-terciaria);
+}
+
+p {
+    --text-color-secundaria: #a6a7ab;
+}
+
