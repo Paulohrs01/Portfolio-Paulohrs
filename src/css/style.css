@@ -151,6 +151,7 @@ body {
 .home .container {
     display: flex;
     margin: 150px 0px;
+    padding: 20px;
     position: relative;
     align-items: center;
 }
@@ -196,7 +197,6 @@ body {
 .home .desc-menor .full {
     font-size: 1.6rem;
     margin-left: 5px;
-
 }
 
 .home .desc-menor .text-verde {
@@ -223,18 +223,18 @@ body {
     box-shadow: 1px 2px 6px #3ccf9286;
 }
 
-.background-images {
+/* .background-images {
     display: flex;
     margin-left: 10px;
     justify-content: flex-end;
     align-content: end;
-}
+} */
 
 .img-mobile {
     width: 190px;
     height: 380px;
-    margin-right: 20px;
     position: absolute;
+    right: 0;
     filter: opacity(0.5);
     transition: transform 0.3s ease-in-out;
 }
@@ -261,7 +261,16 @@ body {
     transform: scale(1.1);
 }
 
-.background-images .img-bolinhas {
+/* .background-images .img-bolinhas {
+    filter: invert(0.1);
+    width: 300px;
+    height: 200px;
+    z-index: -1;
+    margin-top: 210px;
+    margin-right: 20px;
+} */
+
+.img-bolinhas {
     filter: invert(0.1);
     width: 300px;
     height: 200px;
@@ -450,7 +459,6 @@ body {
 .projetos .img-projetos .celular {
     width: 150px;
     height: 280px;
-    border-radius: 20px;
     position: absolute;
     bottom: 50px;
     right: 7px;
