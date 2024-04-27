@@ -16,7 +16,7 @@
 
 /*  Efeito de elementos vindo da esquerda: */
 
-/* .hidden-esquerda {
+.hidden-esquerda {
     opacity: 0;
     transform: translateX(-100%);
     filter: blur(10px);
@@ -28,13 +28,13 @@
     transform: translateX(0);
     filter: blur(0);
     transition: all 4s;
-} */
+}
 
 /*  Efeito de elementos vindo da direita: */
 
-/* .hidden-direita {
+.hidden-direita {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(100%);
     filter: blur(10px);
     transition: all 4s;
 }
@@ -44,7 +44,23 @@
     transform: translateX(0);
     filter: blur(0);
     transition: all 4s;
-} */
+}
+
+@media (max-width: 450px) {
+    .hidden-direita {
+        opacity: 0;
+        transform: translateX(15px) scale(0.6);
+        filter: blur(10px);
+        transition: all 4s;
+    }
+    
+    .show-direita {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+        filter: blur(0);
+        transition: all 4s;
+    }
+}
 
 /*  Efeito somente Blur para os containers: */
 
@@ -62,12 +78,28 @@
 
 /*  Efeito para img mobile/desktop do home, efeito vindo da direita com opacidade 0.5 para funcionar o hover com opacidade 1.0 */
 
-/* .hidden-opacity {
-    transform: translateX(100px);
+.hidden-opacity {
+    transform: translateX(70px);
     transition: all 1.2s;
 }
 
 .show-opacity {
     transform: translateX(0);
     transition: all 1.2s;
-} */
+}
+
+@media (max-width: 450px) {
+    .hidden-opacity {
+        opacity: 0;
+        transform: translateX(15px) scale(0.6);
+        filter: blur(10px);
+        transition: all 1.2s;
+    }
+    
+    .show-opacity {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+        filter: blur(0);
+        transition: all 1.2s;
+    }
+}
