@@ -176,6 +176,10 @@
         margin-left: -35px;
     }
 
+    .home .container .home-desc .desc-menor {
+        width: 300px;
+    }
+
     .home .container .home-desc .paragrafo {
         font-size: 1.1rem;
     }

@@ -20,14 +20,14 @@
     opacity: 0;
     transform: translateX(-100%);
     filter: blur(10px);
-    transition: all 4s;
+    transition: all 3s;
 }
 
 .show-esquerda {
     opacity: 1;
     transform: translateX(0);
     filter: blur(0);
-    transition: all 4s;
+    transition: all 3s;
 }
 
 /*  Efeito de elementos vindo da direita: */
@@ -36,14 +36,14 @@
     opacity: 0;
     transform: translateX(100%);
     filter: blur(10px);
-    transition: all 4s;
+    transition: all 3s;
 }
 
 .show-direita {
     opacity: 1;
     transform: translateX(0);
     filter: blur(0);
-    transition: all 4s;
+    transition: all 3s;
 }
 
 @media (max-width: 450px) {
@@ -51,14 +51,14 @@
         opacity: 0;
         transform: translateX(15px) scale(0.6);
         filter: blur(10px);
-        transition: all 4s;
+        transition: all 3s;
     }
     
     .show-direita {
         opacity: 1;
         transform: translateX(0) scale(1);
         filter: blur(0);
-        transition: all 4s;
+        transition: all 3s;
     }
 }
 
