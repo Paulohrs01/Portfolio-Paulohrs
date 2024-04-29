@@ -46,24 +46,6 @@ const elementsDireita = document.querySelectorAll('.hidden-direita')
 
 elementsDireita.forEach((elementsDireita) => observerDireita.observe(elementsDireita))
 
-
-// Efeito somente Blur para os containers:
-
-const observerContainer = new IntersectionObserver((entries) => {
-    entries.forEach( (entry) => {
-        if(entry.isIntersecting) {
-            entry.target.classList.add('show')    
-        } else {
-            entry.target.classList.remove('show')
-        }
-    })
-})
-
-const elementsContainer = document.querySelectorAll('.hidden')
-
-elementsContainer.forEach((elementsContainer) => observerContainer.observe(elementsContainer))
-
-
 /*  Efeito para img mobile/desktop do home, efeito vindo da direita com opacidade 0.5 para funcionar o hover com opacidade 1.0 */
 
 const observerOpacity = new IntersectionObserver((entries) => {

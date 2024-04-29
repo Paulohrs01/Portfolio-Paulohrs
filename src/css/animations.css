@@ -4,14 +4,14 @@
     opacity: 0;
     transform: translateX(0) scale(0.8);
     filter: blur(10px);
-    transition: all 1s;
+    transition: all 0.4s ease-in-out;
 }
 
 .show-titulo {
     opacity: 1;
     transform: translateX(0) scale(1);
     filter: blur(0);
-    transition: all 1s;
+    transition: all 0.4s ease-in-out;
 }
 
 /*  Efeito de elementos vindo da esquerda: */
@@ -36,14 +36,14 @@
     opacity: 0;
     transform: translateX(100%);
     filter: blur(10px);
-    transition: all 3s;
+    transition: all 2s;
 }
 
 .show-direita {
     opacity: 1;
     transform: translateX(0);
     filter: blur(0);
-    transition: all 3s;
+    transition: all 2s;
 }
 
 @media (max-width: 450px) {
@@ -60,20 +60,6 @@
         filter: blur(0);
         transition: all 3s;
     }
-}
-
-/*  Efeito somente Blur para os containers: */
-
-.hidden {
-    opacity: 0;
-    filter: blur(10px);
-    transition: all 0.5s;
-}
-
-.show {
-    opacity: 1;
-    filter: blur(0);
-    transition: all 0.5s;
 }
 
 /*  Efeito para img mobile/desktop do home, efeito vindo da direita com opacidade 0.5 para funcionar o hover com opacidade 1.0 */
